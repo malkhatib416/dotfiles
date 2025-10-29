@@ -106,3 +106,4 @@ source <(fzf --zsh)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias z="cd"
+alias cat="bat"
