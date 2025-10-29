@@ -79,6 +79,13 @@ if [ -f "$DOTFILES_DIR/gitconfig" ]; then
     echo "  - Linked .gitconfig"
 fi
 
+# zed
+if [ -f "$DOTFILES_DIR/zed/settings.json" ]; then
+	mkdir -p "$HOME/.config/zed"
+	ln -sf "$DOTFILES_DIR/zed/settings.json" "$HOME/.config/zed/settings.json"
+	echo "  - Linked Zed settings.json"
+fi
+
 # Success message
 echo -e "\n${GREEN}════════════════════════════════════════${NC}"
 echo -e "${GREEN}✓ Installation complete!${NC}"
