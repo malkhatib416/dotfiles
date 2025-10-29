@@ -105,5 +105,12 @@ source <(fzf --zsh)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias z="cd"
+alias cd="z"
 alias cat="bat"
+
+# bun completions
+[ -s "/Users/mohamad/.bun/_bun" ] && source "/Users/mohamad/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
