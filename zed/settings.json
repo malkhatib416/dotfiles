@@ -6,13 +6,59 @@
 // To see all of Zed's default settings without changing your
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
+// Cheat sheets
+//! https://cheatsheets.zip/zed
 {
+  "redact_private_values": false,
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "model_parameters": []
+  },
   "icon_theme": "Material Icon Theme",
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "$schema": "https://zed.dev/schema/icon_themes/v0.2.0.json",
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "lsp": {
+    "vue": {
+      "initialization_options": {
+        "typescript": {
+          "tsdk": ".yarn/sdks/typescript/lib"
+        }
+      }
+    }
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato"
+    "dark": "Fleet Dark"
+  },
+  "show_completions_on_input": true,
+  "features": {
+    "copilit": true
+  },
+  // "relative_line_numbers": true
+  "toolbar": {
+    "breadcrumbs": true, // Whether to show breadcrumbs.
+    "quick_actions": true, // Whether to show quick action buttons.
+    "selections_menu": true, // Whether to show the Selections menu
+    "agent_review": true, // Whether to show agent review buttons
+    "code_actions": true // Whether to show code action buttons
+  },
+  "minimap": {
+    "show": "always"
+  },
+  "tabs": {
+    "git_status": true,
+    "show_diagnostics": "all"
+  },
+  "terminal": {
+    "font_family": "Fira Code",
+    "font_size": 14,
+    "env": {
+      // "KEY": "value"
+    }
   }
 }
