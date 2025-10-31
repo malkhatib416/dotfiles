@@ -107,7 +107,7 @@ source <(fzf --zsh)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cd="z"
 alias cat="bat"
-
+alias dev="bun run dev"
 # bun completions
 [ -s "/Users/mohamad/.bun/_bun" ] && source "/Users/mohamad/.bun/_bun"
 
