@@ -33,7 +33,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Fleet Dark"
+    "dark": "Catppuccin Macchiato"
   },
   "show_completions_on_input": true,
   "features": {
