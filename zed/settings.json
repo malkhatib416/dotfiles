@@ -29,8 +29,14 @@
     "vue": {
       "initialization_options": {
         "typescript": {
-          "tsdk": ".yarn/sdks/typescript/lib"
+          "tsdk": "./node_modules/typescript/lib"
         }
+      },
+      "settings": {
+        "vue.inlayHints.inlineHandlerLeading": true,
+        "vue.inlayHints.missingProps": true,
+        "vue.inlayHints.optionsWrapper": true,
+        "vue.inlayHints.vBindShorthand": true
       }
     }
   },
