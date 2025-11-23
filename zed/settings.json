@@ -1,55 +1,24 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
-// Cheat sheets
-//! https://cheatsheets.zip/zed
 {
   "ui_font_family": ".ZedMono",
   "buffer_line_height": "comfortable",
   "buffer_font_weight": 300.0,
   "buffer_font_family": "Monaco",
   "redact_private_values": false,
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "model_parameters": []
-  },
   "icon_theme": "Material Icon Theme",
   "$schema": "https://zed.dev/schema/icon_themes/v0.2.0.json",
   "ui_font_size": 14,
   "buffer_font_size": 14,
-  "lsp": {
-    "vue": {
-      "initialization_options": {
-        "typescript": {
-          "tsdk": ".yarn/sdks/typescript/lib"
-        }
-      }
-    }
-  },
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Catppuccin Mocha - No Italics"
-  },
+  "theme": "Ayu Dark",
   "show_completions_on_input": true,
   "features": {
     "copilit": true
   },
-  // "relative_line_numbers": true
   "toolbar": {
-    "breadcrumbs": true, // Whether to show breadcrumbs.
-    "quick_actions": true, // Whether to show quick action buttons.
-    "selections_menu": true, // Whether to show the Selections menu
-    "agent_review": true, // Whether to show agent review buttons
-    "code_actions": true // Whether to show code action buttons
+    "breadcrumbs": true,
+    "quick_actions": true,
+    "selections_menu": true,
+    "agent_review": true,
+    "code_actions": true
   },
   "minimap": {
     "show": "always"
@@ -61,8 +30,52 @@
   "terminal": {
     "font_family": "Fira Code",
     "font_size": 14,
-    "env": {
-      // "KEY": "value"
+    "env": {}
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "model_parameters": []
+  },
+  // ADD THESE SETTINGS FOR BIOME:
+  "formatter": "language_server",
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.organizeImports": true,
+    "source.fixAll.biome": true
+  },
+  "lsp": {
+    "vue": {
+      "initialization_options": {
+        "typescript": {
+          "tsdk": ".yarn/sdks/typescript/lib"
+        }
+      }
+    },
+    "biome": {
+      "settings": {
+        "config_path": "./biome.json"
+      }
+    }
+  },
+  "languages": {
+    "JavaScript": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "TypeScript": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "TSX": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "JSON": {
+      "formatter": "language_server",
+      "format_on_save": "on"
     }
   }
 }

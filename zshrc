@@ -107,7 +107,13 @@ source <(fzf --zsh)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cd="z"
 alias cat="bat"
+alias zr="source ~/.zshrc"
 alias dev="bun run dev"
+alias test="bun run test"
+alias bd="bun run build"
+alias generate="bun run db:generate"
+alias migrate="bun run db:migrate"
+alias seed="bun run db:seed"
 # bun completions
 [ -s "/Users/mohamad/.bun/_bun" ] && source "/Users/mohamad/.bun/_bun"
 
@@ -142,3 +148,6 @@ export HERD_PHP_82_INI_SCAN_DIR="/Users/mohamad/Library/Application Support/Herd
 
 # Herd injected PHP 8.1 configuration.
 export HERD_PHP_81_INI_SCAN_DIR="/Users/mohamad/Library/Application Support/Herd/config/php/81/"
+
+# Added by Antigravity
+export PATH="/Users/mohamad/.antigravity/antigravity/bin:$PATH"
