@@ -101,7 +101,8 @@ source <(fzf --zsh)
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
-#
+
+CODE_EDITOR="zed"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -114,6 +115,7 @@ alias bd="bun run build"
 alias generate="bun run db:generate"
 alias migrate="bun run db:migrate"
 alias seed="bun run db:seed"
+alias dotfiles="zed ~/dotfiles ."
 # bun completions
 [ -s "/Users/mohamad/.bun/_bun" ] && source "/Users/mohamad/.bun/_bun"
 
