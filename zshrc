@@ -115,7 +115,7 @@ alias bd="bun run build"
 alias generate="bun run db:generate"
 alias migrate="bun run db:migrate"
 alias seed="bun run db:seed"
-alias dotfiles="zed ~/dotfiles ."
+alias dotfiles="zed ~/dotfiles"
 # bun completions
 [ -s "/Users/mohamad/.bun/_bun" ] && source "/Users/mohamad/.bun/_bun"
 
